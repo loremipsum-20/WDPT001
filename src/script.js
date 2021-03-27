@@ -89,6 +89,7 @@ listEL.addEventListener("click", (event) => {
         const currTodo = todos.find((todo) => clickedItemId === todo.id);
         // update clicked todo title with edited text
         currTodo.title = newText;
+        console.log(currTodo);
         saveAndRender();
       }
     };
